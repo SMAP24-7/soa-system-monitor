@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += concurrent
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -24,8 +25,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        system_monitor.cpp
+        system_monitor.cpp \
+    obj_cola.cpp \
+    hwmon.cpp \
+    process.cpp \
+    hardware.cpp \
+    hw.cpp
 
-HEADERS  += system_monitor.h
+HEADERS  += system_monitor.h \
+    obj_cola.h \
+    hwmon.h \
+    process.h \
+    hardware.h \
+    hw.h
 
 FORMS    += system_monitor.ui
